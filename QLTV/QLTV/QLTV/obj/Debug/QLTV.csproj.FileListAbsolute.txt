@@ -8,3 +8,15 @@ c:\users\hiếu học\documents\visual studio 2013\Projects\QLTV\QLTV\obj\Debug
 c:\users\hiếu học\documents\visual studio 2013\Projects\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
 c:\users\hiếu học\documents\visual studio 2013\Projects\QLTV\QLTV\obj\Debug\QLTV.exe
 c:\users\hiếu học\documents\visual studio 2013\Projects\QLTV\QLTV\obj\Debug\QLTV.pdb
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.csprojResolveAssemblyReference.cache
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_DangNhap.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_DocGia.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Main.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_TTBD.resources

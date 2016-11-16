@@ -30,7 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.độcGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinMượntrảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +41,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sáchToolStripMenuItem,
-            this.độcGiảToolStripMenuItem,
+            this.DGToolStripMenuItem,
             this.thôngTinMượntrảToolStripMenuItem,
             this.trợGiúpToolStripMenuItem,
             this.thoátToolStripMenuItem});
@@ -58,12 +58,12 @@
             this.sáchToolStripMenuItem.Text = "Sách";
             this.sáchToolStripMenuItem.Click += new System.EventHandler(this.sáchToolStripMenuItem_Click);
             // 
-            // độcGiảToolStripMenuItem
+            // DGToolStripMenuItem
             // 
-            this.độcGiảToolStripMenuItem.Name = "độcGiảToolStripMenuItem";
-            this.độcGiảToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.độcGiảToolStripMenuItem.Text = "Độc giả";
-            this.độcGiảToolStripMenuItem.Click += new System.EventHandler(this.độcGiảToolStripMenuItem_Click);
+            this.DGToolStripMenuItem.Name = "DGToolStripMenuItem";
+            this.DGToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.DGToolStripMenuItem.Text = "Độc giả";
+            this.DGToolStripMenuItem.Click += new System.EventHandler(this.độcGiảToolStripMenuItem_Click);
             // 
             // thôngTinMượntrảToolStripMenuItem
             // 
@@ -94,6 +94,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Frm_Main";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_Main_FormClosed);
+            this.Load += new System.EventHandler(this.Frm_Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -105,7 +107,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem sáchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem độcGiảToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinMượntrảToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
