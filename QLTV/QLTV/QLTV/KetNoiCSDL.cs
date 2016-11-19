@@ -16,7 +16,8 @@ namespace QLTV
         {
             try
             {
-                con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_ThuVien;Integrated Security=True");
+                con = new SqlConnection(@"Data Source=.;Initial Catalog=QL_ThuVien;Integrated Security=True");
+               // Data Source=.;Initial Catalog=QL_ThuVien;Integrated Security=True
                 con.Open();
             }
             catch
@@ -120,6 +121,65 @@ namespace QLTV
             cmd.Parameters.Add(new SqlParameter("@dienthoai", sdt));
             cmd.Parameters.Add(new SqlParameter("@lop", lop));
             cmd.Parameters.Add(new SqlParameter("@Email", email));
+            try
+            {
+                int count = cmd.ExecuteNonQuery();
+                if (count > 0) MessageBox.Show("Thêm thành công!", "Thông báo");
+                else MessageBox.Show("Thêm không thành công!", "Thông báo");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thêm không thành công!\n Lỗi: " + ex.ToString(), "Thông báo");
+            }
+            DongKN();
+        }
+        public void Sua_TaiLieu(string matl, string nhande, string tacgia, string soluong, string domat, string ngonngu, string taiban, string sotrang, string trangthai, string manxb, string maTloai, string ngaynhap)
+        {
+            MoKN();
+            SqlCommand cmd = new SqlCommand("Sua_sach", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@matl", matl));
+            cmd.Parameters.Add(new SqlParameter("@tacgia", tacgia));
+            cmd.Parameters.Add(new SqlParameter("@nhande", nhande));
+            cmd.Parameters.Add(new SqlParameter("@soluong", Convert.ToInt32(soluong)));
+            cmd.Parameters.Add(new SqlParameter("@domat", Convert.ToInt32(domat)));
+            cmd.Parameters.Add(new SqlParameter("@ngonngu", ngonngu));
+            cmd.Parameters.Add(new SqlParameter("@maTloai", maTloai));
+            cmd.Parameters.Add(new SqlParameter("@manxb", manxb));
+            cmd.Parameters.Add(new SqlParameter("@sotrang", Convert.ToInt32(sotrang)));
+            cmd.Parameters.Add(new SqlParameter("@taiban", Convert.ToInt32(taiban)));
+            cmd.Parameters.Add(new SqlParameter("@trangthai", trangthai));
+            cmd.Parameters.Add(new SqlParameter("@ngaynhap", DateTime.Parse(ngaynhap)));
+            try
+            {
+                int count = cmd.ExecuteNonQuery();
+                if (count > 0) MessageBox.Show("Sửa thành công!", "Thông báo");
+                else MessageBox.Show("Sửa không thành công!", "Thông báo");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Sửa không thành công!\n Lỗi: " + ex.ToString(), "Thông báo");
+            }
+            DongKN();
+        }
+
+        public void Them_TaiLieu(string matl, string nhande, string tacgia, string soluong, string domat, string ngonngu, string taiban, string sotrang, string trangthai, string manxb, string maTloai, string ngaynhap)
+        {
+            MoKN();
+            SqlCommand cmd = new SqlCommand("Them_sach", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@matl", matl));
+            cmd.Parameters.Add(new SqlParameter("@tacgia", tacgia));
+            cmd.Parameters.Add(new SqlParameter("@nhande", nhande));
+            cmd.Parameters.Add(new SqlParameter("@soluong", soluong));
+            cmd.Parameters.Add(new SqlParameter("@domat", domat));
+            cmd.Parameters.Add(new SqlParameter("@ngonngu", ngonngu));
+            cmd.Parameters.Add(new SqlParameter("@maTloai", maTloai));
+            cmd.Parameters.Add(new SqlParameter("@manxb", manxb));
+            cmd.Parameters.Add(new SqlParameter("@sotrang", sotrang));
+            cmd.Parameters.Add(new SqlParameter("@taiban", taiban));
+            cmd.Parameters.Add(new SqlParameter("@trangthai", trangthai));
+            cmd.Parameters.Add(new SqlParameter("@ngaynhap", DateTime.Parse(ngaynhap)));
             try
             {
                 int count = cmd.ExecuteNonQuery();

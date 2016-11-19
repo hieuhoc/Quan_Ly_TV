@@ -20,3 +20,17 @@ D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Main.r
 D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
 D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
 D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_TTBD.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe.config
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.exe
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.pdb
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\bin\Debug\QLTV.exe
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\bin\Debug\QLTV.pdb
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.csprojResolveAssemblyReference.cache
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_DangNhap.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_DocGia.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Main.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_TTBD.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Sach.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Sach_Details.resources
