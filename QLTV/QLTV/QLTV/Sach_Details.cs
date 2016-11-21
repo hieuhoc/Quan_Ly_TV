@@ -115,9 +115,7 @@ namespace QLTV
         {
             try
             {
-                kn.Them_TaiLieu(txt_Matl.Text, txt_Ten.Text, txt_Tacgia.Text, txt_Soluong.Text, txt_Domat.Text, txt_Ngonngu.Text, txt_Taiban.Text, txt_SoTrang.Text, cmb_Trangthai.Text, cmb_NXB.SelectedValue.ToString(), cmb_TL.SelectedValue.ToString(), DTPicker.Text);
-                //string s = @"insert into TaiLieu values('" + Ma_TuDongTang().ToString() + "', N'" + txt_Tacgia.Text + "', N'" + txt_Ten.Text + "', " + Convert.ToInt32(txt_Soluong.Text) + "," + Convert.ToInt32(txt_Domat.Text) + ", N' " + txt_Ngonngu.Text + "', '" + cmb_TL.SelectedValue + "', '" + cmb_NXB.SelectedValue + "', '" + txt_SoTrang.Text + "', '" + txt_Taiban.Text + "', 'Ready', '" + Convert.ToDateTime(DateTime.Now.ToString()) + "')";
-                //dt = kn.Get(s);
+                kn.Them_TaiLieu(txt_Matl.Text, txt_Ten.Text, txt_Tacgia.Text, txt_Soluong.Text, txt_Domat.Text, txt_Ngonngu.Text, txt_Taiban.Text, txt_SoTrang.Text, cmb_Trangthai.Text, cmb_NXB.SelectedValue.ToString(), cmb_TL.SelectedValue.ToString(), DTPicker.Text);   
             }
             catch(Exception ex)
             {
@@ -130,8 +128,6 @@ namespace QLTV
             try
             {
                 kn.Sua_TaiLieu(txt_Matl.Text, txt_Ten.Text, txt_Tacgia.Text, txt_Soluong.Text, txt_Domat.Text, txt_Ngonngu.Text, txt_Taiban.Text, txt_SoTrang.Text, cmb_Trangthai.Text, cmb_NXB.SelectedValue.ToString(), cmb_TL.SelectedValue.ToString(), DTPicker.Text);
-                //string s = @"update Tailieu set Matl = '" + maTL + "', TacGia = N'" + txt_Tacgia.Text + "', NhanDe = N'" + txt_Ten.Text + "', SoLuong = " + Convert.ToInt32(txt_Soluong.Text) + ", DoMat =" + Convert.ToInt32(txt_Domat.Text) + " , NgonNgu = N'" + txt_Ngonngu.Text + "', MaTheLoai = '" + cmb_TL.SelectedValue + "', MaNXB = '" + cmb_NXB.SelectedValue + "', SoTrang = " + txt_SoTrang.Text + ",TaiBan ='" + txt_Taiban.Text + "',Trangthai = '" + cmb_Trangthai.Text + "',NgayNhap = '" + Convert.ToDateTime(DTPicker.Text) + "' where matl = '" + maTL + "'";
-                //dt = kn.Get(s);
             }
             catch (Exception ex)
             {

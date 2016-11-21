@@ -26,41 +26,16 @@ namespace QLTV
         {
             load();
         }
-        
+
         public void load()
         {
             check = false;
             trangthai = 0;
-           // Tat();
             string s = "select MaTL, NhanDe, TacGia, SoLuong, DoMat, NgonNgu, TenTheLoai, TenNXB, SoTrang, TaiBan, TrangThai, NgayNhap from TaiLieu a, TheLoai b, NXB c where a.MaTheLoai = b.MaTheLoai and a.MaNXB = c.MaNXB";
             DTGV.DataSource = kn.Get(s);
-
-            /*
-
-            cmb_NXB.DataSource = kn.Get("select MaNXB, TenNXB from NXB");
-            cmb_NXB.DisplayMember = "TenNXB";
-            cmb_NXB.ValueMember = "MaNXB";
-
-
-            cmb_TL.DataSource = kn.Get("select * from theloai");
-            cmb_TL.DisplayMember = "Tentheloai";
-            cmb_TL.ValueMember = "Matheloai";
-
-             */
-           
         }
+
             
-        /*
-        void Tat()
-        {
-            txt_Domat.Enabled = txt_Ngonngu.Enabled = txt_Soluong.Enabled = txt_Tacgia.Enabled = txt_Ten.Enabled = cmb_NXB.Enabled = cmb_TL.Enabled = txt_SoTrang.Enabled = txt_Taiban.Enabled = false;
-        }
-
-        void Bat()
-        {
-            txt_Domat.Enabled = txt_Ngonngu.Enabled = txt_Soluong.Enabled = txt_Tacgia.Enabled = txt_Ten.Enabled = cmb_NXB.Enabled = cmb_TL.Enabled = txt_SoTrang.Enabled = txt_Taiban.Enabled = true;
-        }
-         */
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -72,7 +47,6 @@ namespace QLTV
             trangthai = 1;
             Frm_Sach_Details sd = new Frm_Sach_Details("", check, trangthai);
             sd.ShowDialog();
-          //  Bat();
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -81,7 +55,6 @@ namespace QLTV
             check = true;
             Frm_Sach_Details sd = new Frm_Sach_Details(DTGV.CurrentRow.Cells[0].Value.ToString(), check, trangthai);
             sd.ShowDialog();
-            //Bat();
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -93,38 +66,10 @@ namespace QLTV
                 dt = kn.Get(@"delete  from Tailieu where matl='" + DTGV.CurrentRow.Cells[0].Value.ToString() + "'");
                 load();
             }
-            //Bat();
         }
 
-        private void btn_Huy_Click(object sender, EventArgs e)
-        {
-            
-        }
-        #region nhan nut luu
-        //private void btn_Luu_Click(object sender, EventArgs e)
-        //{
-        //    if (trangthai == 1) Them();
-        //    if (trangthai == 2) Sua();
-        //    if (trangthai == 3) Xoa();
-        //    Tat();
-        //}
-        #endregion
-        
+    
 
-        
-
-        //private void DTGV_CellClick(object sender, DataGridViewCellEventArgs e)
-        //{
-
-        //    maTL = DTGV.Rows[e.RowIndex].Cells["MaTL"].Value.ToString();
-        //    txt_Ten.Text = DTGV.Rows[e.RowIndex].Cells["NhanDe"].Value.ToString();
-        //    txt_Tacgia.Text = DTGV.Rows[e.RowIndex].Cells["TacGia"].Value.ToString();
-        //    txt_Soluong.Text = DTGV.Rows[e.RowIndex].Cells["SoLuong"].Value.ToString();
-        //    txt_Domat.Text = DTGV.Rows[e.RowIndex].Cells["DoMat"].Value.ToString();
-        //    txt_Ngonngu.Text = DTGV.Rows[e.RowIndex].Cells["NgonNgu"].Value.ToString();
-        //    cmb_TL.Text = DTGV.Rows[e.RowIndex].Cells["TenTheLoai"].Value.ToString();
-        //    cmb_NXB.Text = DTGV.Rows[e.RowIndex].Cells["TenNXB"].Value.ToString();
-        //}
 
         private void DTGV_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
