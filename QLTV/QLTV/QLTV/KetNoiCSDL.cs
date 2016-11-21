@@ -192,5 +192,84 @@ namespace QLTV
             }
             DongKN();
         }
+
+        public void Sua_TTMT(string mapm, string bandoc, string nhande, string trangthai, string ngaynhap, string ngaytra, string ghichu)
+        {
+            int TT;
+            string s;
+            DataTable dt = new DataTable();
+            if (trangthai == "Đã trả") TT = 1;
+            else TT = 0;
+            //if (TT == 0) ngaytra = "";
+            
+            s = "select mabd from bandoc where hoten = N'"+ bandoc+"'";
+            dt = Get(s);
+            bandoc = dt.Rows[0][0].ToString();
+
+            s = "select matl from tailieu where nhande = N'" + nhande + "'";
+            dt = Get(s);
+            nhande = dt.Rows[0][0].ToString();
+            MoKN();
+            SqlCommand cmd = new SqlCommand("Sua_TTMT", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@mapm", mapm));
+            cmd.Parameters.Add(new SqlParameter("@bandoc", bandoc));
+            cmd.Parameters.Add(new SqlParameter("@nhande", nhande));
+            cmd.Parameters.Add(new SqlParameter("@trangthai", TT));
+            cmd.Parameters.Add(new SqlParameter("@ngaynhap", DateTime.Parse(ngaynhap)));
+            cmd.Parameters.Add(new SqlParameter("@ngaytra", DateTime.Parse(ngaytra)));
+            cmd.Parameters.Add(new SqlParameter("@ghichu", ghichu));
+            try
+            {
+                int count = cmd.ExecuteNonQuery();
+                if (count > 0) MessageBox.Show("Sửa thành công!", "Thông báo");
+                else MessageBox.Show("Sửa không thành công!", "Thông báo");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Sửa không thành công!\n Lỗi: " + ex.ToString(), "Thông báo");
+            }
+            DongKN();
+        }
+
+        public void Them_TTMT(string mapm, string bandoc, string nhande, string trangthai, string ngaynhap, string ngaytra, string ghichu)
+        {
+            int TT;
+            string s;
+            DataTable dt = new DataTable();
+            if (trangthai == "Đã trả") TT = 1;
+            else TT = 0;
+            //if (TT == 0) ngaytra = "";
+            
+            s = "select mabd from bandoc where hoten = N'"+ bandoc+"'";
+            dt = Get(s);
+            bandoc = dt.Rows[0][0].ToString();
+
+            s = "select matl from tailieu where nhande = N'" + nhande + "'";
+            dt = Get(s);
+            nhande = dt.Rows[0][0].ToString();
+
+            MoKN();
+            SqlCommand cmd = new SqlCommand("Them_TTMT", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@mapm", mapm));
+            cmd.Parameters.Add(new SqlParameter("@bandoc", bandoc));
+            cmd.Parameters.Add(new SqlParameter("@nhande", nhande));
+            cmd.Parameters.Add(new SqlParameter("@trangthai", TT));
+            cmd.Parameters.Add(new SqlParameter("@ngaynhap", DateTime.Parse(ngaynhap)));
+            cmd.Parameters.Add(new SqlParameter("@ngaytra", DateTime.Parse(ngaytra)));
+            cmd.Parameters.Add(new SqlParameter("@ghichu", ghichu));
+            try
+            {
+                int count = cmd.ExecuteNonQuery();
+                if (count > 0) MessageBox.Show("Thêm thành công!", "Thông báo");
+                else MessageBox.Show("Thêm không thành công!", "Thông báo");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thêm không thành công!\n Lỗi: " + ex.ToString(), "Thông báo");
+            }
+            DongKN();
+        }
     }
 }
