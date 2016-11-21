@@ -40,7 +40,7 @@ namespace QLTV
 
         private void thôngTinMượntrảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_MuonTra ttmuon_tra = new Frm_MuonTra();
+            Frm_thongtinmuon_tra ttmuon_tra = new Frm_thongtinmuon_tra();
             ttmuon_tra.ShowDialog();
         }
 

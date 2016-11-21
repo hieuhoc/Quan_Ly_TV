@@ -131,7 +131,6 @@ namespace QLTV
             check = true;
             trangthai = 0;
             Frm_Sach_Details sd = new Frm_Sach_Details(DTGV.Rows[e.RowIndex].Cells["MaTL"].Value.ToString(), check, trangthai);
-            this.Hide();
             sd.ShowDialog();
         }
 

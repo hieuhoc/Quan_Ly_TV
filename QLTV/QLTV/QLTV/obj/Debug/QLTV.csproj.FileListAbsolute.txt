@@ -34,5 +34,3 @@ E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resource
 E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
 E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Sach.resources
 E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Sach_Details.resources
-E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_MuonTra.resources
-E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_TTMuonTra.resources
