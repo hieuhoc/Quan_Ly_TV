@@ -68,17 +68,23 @@
     <Compile Include="Frm_Sach.designer.cs">
       <DependentUpon>Frm_Sach.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_thongtinmuon_tra.cs">
+    <Compile Include="Frm_MuonTra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_thongtinmuon_tra.Designer.cs">
-      <DependentUpon>Frm_thongtinmuon_tra.cs</DependentUpon>
+    <Compile Include="Frm_MuonTra.Designer.cs">
+      <DependentUpon>Frm_MuonTra.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_TTBD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_TTBD.Designer.cs">
       <DependentUpon>Frm_TTBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TTMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TTMuonTra.Designer.cs">
+      <DependentUpon>Frm_TTMuonTra.cs</DependentUpon>
     </Compile>
     <Compile Include="KetNoiCSDL.cs" />
     <Compile Include="Program.cs" />
