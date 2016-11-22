@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace QLTV
 {
@@ -57,6 +58,11 @@ namespace QLTV
         private void Frm_Main_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Users\Hien\Documents\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\bin\HD_QLTV.docx");
         }
     }
 }
