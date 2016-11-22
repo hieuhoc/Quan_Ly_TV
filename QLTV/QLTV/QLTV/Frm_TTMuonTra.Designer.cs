@@ -120,7 +120,7 @@
             // 
             // btn_Huy
             // 
-           // this.btn_Huy.Image = ((System.Drawing.Image)(resources.GetObject("btn_Huy.Image")));
+            this.btn_Huy.Image = ((System.Drawing.Image)(resources.GetObject("btn_Huy.Image")));
             this.btn_Huy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Huy.Location = new System.Drawing.Point(511, 317);
             this.btn_Huy.Name = "btn_Huy";
@@ -133,7 +133,7 @@
             // 
             // btn_Luu
             // 
-            //this.btn_Luu.Image = ((System.Drawing.Image)(resources.GetObject("btn_Luu.Image")));
+            this.btn_Luu.Image = ((System.Drawing.Image)(resources.GetObject("btn_Luu.Image")));
             this.btn_Luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Luu.Location = new System.Drawing.Point(581, 317);
             this.btn_Luu.Name = "btn_Luu";

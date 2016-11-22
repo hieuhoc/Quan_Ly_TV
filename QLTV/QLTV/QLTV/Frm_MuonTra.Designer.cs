@@ -32,7 +32,6 @@
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
-            this.btn_Them = new System.Windows.Forms.Button();
             this.DTGV = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,13 +47,14 @@
             this.txt_TK_Ngaymuon = new System.Windows.Forms.TextBox();
             this.txt_TK_Bandoc = new System.Windows.Forms.TextBox();
             this.txt_TK_Maphieu = new System.Windows.Forms.TextBox();
+            this.btn_Them = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DTGV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Refresh
             // 
-            //this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
+            this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
             this.btn_Refresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Refresh.Location = new System.Drawing.Point(213, 3);
             this.btn_Refresh.Name = "btn_Refresh";
@@ -67,7 +67,7 @@
             // 
             // btn_Xoa
             // 
-            //this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
+            this.btn_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.Image")));
             this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Xoa.Location = new System.Drawing.Point(143, 3);
             this.btn_Xoa.Name = "btn_Xoa";
@@ -80,7 +80,7 @@
             // 
             // btn_Sua
             // 
-            //this.btn_Sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.Image")));
+            this.btn_Sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.Image")));
             this.btn_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Sua.Location = new System.Drawing.Point(73, 3);
             this.btn_Sua.Name = "btn_Sua";
@@ -90,19 +90,6 @@
             this.btn_Sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Sua.UseVisualStyleBackColor = true;
             this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
-            // 
-            // btn_Them
-            // 
-            //this.btn_Them.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them.Image")));
-            this.btn_Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Them.Location = new System.Drawing.Point(3, 3);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(64, 35);
-            this.btn_Them.TabIndex = 29;
-            this.btn_Them.Text = "Thêm";
-            this.btn_Them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Them.UseVisualStyleBackColor = true;
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // DTGV
             // 
@@ -226,6 +213,19 @@
             this.txt_TK_Maphieu.Size = new System.Drawing.Size(90, 20);
             this.txt_TK_Maphieu.TabIndex = 23;
             this.txt_TK_Maphieu.TextChanged += new System.EventHandler(this.txt_TK_Maphieu_TextChanged);
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them.Image")));
+            this.btn_Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Them.Location = new System.Drawing.Point(3, 3);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(64, 35);
+            this.btn_Them.TabIndex = 29;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // Frm_MuonTra
             // 
