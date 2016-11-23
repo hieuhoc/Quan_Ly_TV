@@ -62,6 +62,12 @@
     <Compile Include="Frm_Main.Designer.cs">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_QLND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QLND.Designer.cs">
+      <DependentUpon>Frm_QLND.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Sach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_MuonTra.resx">
       <DependentUpon>Frm_MuonTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QLND.resx">
+      <DependentUpon>Frm_QLND.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Sach.resx">
       <DependentUpon>Frm_Sach.cs</DependentUpon>
@@ -162,6 +171,7 @@
     <Content Include="Resources\add-contact-icon.png" />
     <Content Include="Resources\Button-Delete-icon.png" />
     <Content Include="Resources\edit-icon.png" />
+    <None Include="Resources\Library-stacks-700px.jpg" />
     <Content Include="Resources\Refresh-icon.png" />
     <Content Include="Resources\Save-as-icon.png" />
   </ItemGroup>

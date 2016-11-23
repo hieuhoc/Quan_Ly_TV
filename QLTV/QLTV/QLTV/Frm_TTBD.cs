@@ -19,13 +19,13 @@ namespace QLTV
         {
             InitializeComponent();
         }
-        public Frm_TTBD(string ma, int k)
+        public Frm_TTBD(string ma,int k)
         {
             InitializeComponent();
             mabd = ma;
             kt = k;
         }
-        public Frm_TTBD( int k)
+        public Frm_TTBD(int k)
         {
             InitializeComponent();
             kt = k;

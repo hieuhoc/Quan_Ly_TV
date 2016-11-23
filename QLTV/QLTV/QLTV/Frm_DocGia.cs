@@ -12,19 +12,26 @@ namespace QLTV
 {
     public partial class Frm_DocGia : Form
     {
+        public static int PhanQuyen;
         private bool _dangtimma = false;
         private bool _dangtimten = false;
         private bool _dangtimlop = false;
         KetNoiCSDL _con = new KetNoiCSDL();
-        private int phanquyen=4;
+        //int PhanQuyen=4;
         public Frm_DocGia()
         {
+            if (PhanQuyen < 4)
+            {
+                btnLammoi.Enabled = btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = false;
+            }
+            else
+                btnLammoi.Enabled = btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = true;
             InitializeComponent();
         }
         public Frm_DocGia(int n)
         {
             InitializeComponent();
-            phanquyen = n;
+            //PhanQuyen = n;
         }
 
         private void Frm_DocGia_Load(object sender, EventArgs e)
@@ -123,7 +130,7 @@ namespace QLTV
 
         private void dgvDocGia_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && phanquyen == 4)
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && PhanQuyen == 4)
             {
                 btnSua.Enabled = true;
                 btnXoa.Enabled = true;
@@ -150,7 +157,7 @@ namespace QLTV
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            Frm_TTBD frmTTBD = new Frm_TTBD(dgvDocGia.CurrentRow.Cells[0].Value.ToString(), phanquyen);
+            Frm_TTBD frmTTBD = new Frm_TTBD(dgvDocGia.CurrentRow.Cells[0].Value.ToString(), PhanQuyen);
             frmTTBD.ShowDialog();
 
         }
@@ -167,7 +174,7 @@ namespace QLTV
 
         private void dgvDocGia_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Frm_TTBD frmTTBD = new Frm_TTBD(dgvDocGia.CurrentRow.Cells[0].Value.ToString(), phanquyen);
+            Frm_TTBD frmTTBD = new Frm_TTBD(dgvDocGia.CurrentRow.Cells[0].Value.ToString(),PhanQuyen);
             frmTTBD.ShowDialog();
         }
 

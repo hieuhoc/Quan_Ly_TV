@@ -16,15 +16,37 @@ namespace QLTV
         private int phanquyen;
         public Frm_Main()
         {
+            if (phanquyen ==4)
+            {
+                quảnLýNgườiDùngToolStripMenuItem.Visible = true;
+            }
+            else quảnLýNgườiDùngToolStripMenuItem.Visible = false;
             InitializeComponent();
         }
         public Frm_Main(int s)
         {
             InitializeComponent();
             phanquyen = s;
-            if(s<4)
+            if (s == 4)
             {
+                quảnLýNgườiDùngToolStripMenuItem.Enabled = true;
+                sáchToolStripMenuItem.Enabled = true;
+                DGToolStripMenuItem.Enabled = true;
+                thôngTinMượntrảToolStripMenuItem.Enabled = true;
+            }
+            else if (s <= 3 && s>=2 )
+            {
+                quảnLýNgườiDùngToolStripMenuItem.Enabled = false;
+                sáchToolStripMenuItem.Enabled=true;
+                DGToolStripMenuItem.Enabled = true;
+                thôngTinMượntrảToolStripMenuItem.Enabled = true;
+            }
+            else if (s <2 )
+            {
+                quảnLýNgườiDùngToolStripMenuItem.Enabled = false;
+                sáchToolStripMenuItem.Enabled = true;
                 DGToolStripMenuItem.Enabled = false;
+                thôngTinMượntrảToolStripMenuItem.Enabled = false;
             }
         }
         private void sáchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,7 +84,18 @@ namespace QLTV
 
         private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start(@"C:\Users\Hien\Documents\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\bin\HD_QLTV.docx");
+            Process.Start(@"C:\Users\Hiếu Học\Documents\GitHub\Quan_Ly_TV\QLTV\HDSDSP.docx");
+        }
+
+        private void quảnLýNgườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_QLND QLND = new Frm_QLND();
+            QLND.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
