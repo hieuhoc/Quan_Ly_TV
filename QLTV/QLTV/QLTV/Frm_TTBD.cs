@@ -65,6 +65,7 @@ namespace QLTV
         {
             if(kt>=0) _con.Sua_TTBD(txtMaHS.Text, txtHoTen.Text, cboLop.Text, cboGT.Text, txtCMND.Text, txtSDT.Text, txtDiaChi.Text, txtNgaySinh.Text,txtEmail.Text);
            else _con.Them_BD( txtHoTen.Text, cboLop.Text, cboGT.Text, txtDiaChi.Text, txtSDT.Text, txtCMND.Text, txtNgaySinh.Text,txtEmail.Text);
+            this.Close();
         }
 
         private void btnDong_Click(object sender, EventArgs e)

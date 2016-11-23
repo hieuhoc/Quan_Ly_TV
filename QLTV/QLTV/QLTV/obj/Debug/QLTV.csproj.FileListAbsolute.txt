@@ -70,3 +70,8 @@ C:\Users\Hiếu Học\Documents\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV
 E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_MuonTra.resources
 E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_QLND.resources
 E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_TTMuonTra.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_MuonTra.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_QLND.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Sach.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_TTMuonTra.resources
+D:\1-Study\4-HK6\ThucTapNhom\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Sach_Details.resources

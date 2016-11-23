@@ -20,18 +20,19 @@ namespace QLTV
         //int PhanQuyen=4;
         public Frm_DocGia()
         {
+            
+            InitializeComponent();
+        }
+        public Frm_DocGia(int n)
+        {
+            InitializeComponent();
+            PhanQuyen = n;
             if (PhanQuyen < 4)
             {
                 btnLammoi.Enabled = btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = false;
             }
             else
                 btnLammoi.Enabled = btnSua.Enabled = btnThem.Enabled = btnXoa.Enabled = true;
-            InitializeComponent();
-        }
-        public Frm_DocGia(int n)
-        {
-            InitializeComponent();
-            //PhanQuyen = n;
         }
 
         private void Frm_DocGia_Load(object sender, EventArgs e)

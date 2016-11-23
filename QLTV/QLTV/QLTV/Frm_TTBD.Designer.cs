@@ -62,6 +62,10 @@
             // cboGT
             // 
             this.cboGT.FormattingEnabled = true;
+            this.cboGT.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
             this.cboGT.Location = new System.Drawing.Point(442, 130);
             this.cboGT.Name = "cboGT";
             this.cboGT.Size = new System.Drawing.Size(140, 21);
