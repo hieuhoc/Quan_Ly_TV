@@ -17,6 +17,7 @@ namespace QLTV
             try
             {
                 con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_ThuVien;Integrated Security=True");
+                //con = new SqlConnection(@"Data Source=.\;Initial Catalog=QL_ThuVien;Integrated Security=True");
                // Data Source=.;Initial Catalog=QL_ThuVien;Integrated Security=True
                 con.Open();
             }

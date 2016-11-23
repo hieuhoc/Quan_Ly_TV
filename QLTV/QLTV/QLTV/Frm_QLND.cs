@@ -39,7 +39,7 @@ namespace QLTV
                 //SqlCommand insertCmd = new SqlCommand(insertStr, con);
                 //insertCmd.CommandType = CommandType.Text;
                 //insertCmd.ExecuteNonQuery();
-                dgv.DataSource = con.Get("Insert into TaiKhoan Values('" + ID + "','" + MatKhau + "','" + PhanQuyen + "','" + MaBD + "')");
+                con.Excecute("Insert into TaiKhoan Values('" + ID + "','" + MatKhau + "','" + PhanQuyen + "','" + MaBD + "')");
                 dgv.DataSource = con.Get("select * from TaiKhoan");
                 MessageBox.Show("Bạn đã lưu thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
                 con.DongKN();
@@ -61,7 +61,7 @@ namespace QLTV
                 string MatKhau = Convert.ToString(dgv.Rows[CurrentIndex].Cells[1].Value.ToString());
                 string PhanQuyen = Convert.ToString(dgv.Rows[CurrentIndex].Cells[2].Value.ToString());
                 string MaBD = Convert.ToString(dgv.Rows[CurrentIndex].Cells[3].Value.ToString());
-                dgv.DataSource = con.Get("Update TaiKhoan set ID='" + ID + "',MatKhau='" + MatKhau + "',PhanQuyen='" + PhanQuyen + "',MaBD='" + MaBD + "' where ID='" + ID + "'");
+                con.Excecute("Update TaiKhoan set ID='" + ID + "',MatKhau='" + MatKhau + "',PhanQuyen='" + PhanQuyen + "',MaBD='" + MaBD + "' where ID='" + ID + "'");
                 dgv.DataSource = con.Get("select * from TaiKhoan");
                 MessageBox.Show("Bạn đã sửa thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
                 con.DongKN();
@@ -80,7 +80,7 @@ namespace QLTV
                 con.MoKN();
                 int CurrentIndex = dgv.CurrentCell.RowIndex;
                 string ID = Convert.ToString(dgv.Rows[CurrentIndex].Cells[0].Value.ToString());
-                dgv.DataSource = con.Get("Delete from TaiKhoan where ID='" + ID + "'");
+                con.Excecute("Delete from TaiKhoan where ID='" + ID + "'");
                 dgv.DataSource = con.Get("select * from TaiKhoan");
                 MessageBox.Show("Bạn đã xóa thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
                 con.DongKN();

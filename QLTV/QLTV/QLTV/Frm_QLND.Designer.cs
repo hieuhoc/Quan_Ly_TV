@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhanQuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Them = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
@@ -45,6 +41,10 @@
             this.rdb_MatKhau = new System.Windows.Forms.RadioButton();
             this.rdb_Quyen = new System.Windows.Forms.RadioButton();
             this.btn_TimKiem = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhanQuyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -63,38 +63,6 @@
             this.dgv.Name = "dgv";
             this.dgv.Size = new System.Drawing.Size(459, 296);
             this.dgv.TabIndex = 0;
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID.DataPropertyName = "ID";
-            this.ID.HeaderText = "Tài khoản";
-            this.ID.Name = "ID";
-            this.ID.Width = 108;
-            // 
-            // MatKhau
-            // 
-            this.MatKhau.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.MatKhau.DataPropertyName = "MatKhau";
-            this.MatKhau.HeaderText = "Mật Khẩu";
-            this.MatKhau.Name = "MatKhau";
-            this.MatKhau.Width = 108;
-            // 
-            // PhanQuyen
-            // 
-            this.PhanQuyen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.PhanQuyen.DataPropertyName = "PhanQuyen";
-            this.PhanQuyen.HeaderText = "Phân Quyền";
-            this.PhanQuyen.Name = "PhanQuyen";
-            this.PhanQuyen.Width = 91;
-            // 
-            // MaBD
-            // 
-            this.MaBD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.MaBD.DataPropertyName = "MaBD";
-            this.MaBD.HeaderText = "Mã bạn đọc";
-            this.MaBD.Name = "MaBD";
-            this.MaBD.Width = 109;
             // 
             // btn_Them
             // 
@@ -210,6 +178,35 @@
             this.btn_TimKiem.UseVisualStyleBackColor = true;
             this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
             // 
+            // ID
+            // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "Tài khoản";
+            this.ID.Name = "ID";
+            // 
+            // MatKhau
+            // 
+            this.MatKhau.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MatKhau.DataPropertyName = "MatKhau";
+            this.MatKhau.HeaderText = "Mật Khẩu";
+            this.MatKhau.Name = "MatKhau";
+            // 
+            // PhanQuyen
+            // 
+            this.PhanQuyen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PhanQuyen.DataPropertyName = "PhanQuyen";
+            this.PhanQuyen.HeaderText = "Phân Quyền";
+            this.PhanQuyen.Name = "PhanQuyen";
+            // 
+            // MaBD
+            // 
+            this.MaBD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.MaBD.DataPropertyName = "MaBD";
+            this.MaBD.HeaderText = "Mã bạn đọc";
+            this.MaBD.Name = "MaBD";
+            this.MaBD.Width = 90;
+            // 
             // Frm_QLND
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,10 +236,6 @@
         private System.Windows.Forms.Button btn_Sua;
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button txt_LamMoi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MatKhau;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PhanQuyen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaBD;
         private System.Windows.Forms.Button btn_Thoat;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -251,5 +244,9 @@
         private System.Windows.Forms.RadioButton rdb_MatKhau;
         private System.Windows.Forms.RadioButton rdb_Quyen;
         private System.Windows.Forms.Button btn_TimKiem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MatKhau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhanQuyen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBD;
     }
 }
