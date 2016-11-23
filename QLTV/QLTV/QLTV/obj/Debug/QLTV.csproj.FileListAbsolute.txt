@@ -67,3 +67,6 @@ C:\Users\Hiếu Học\Documents\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV
 C:\Users\Hiếu Học\Documents\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
 C:\Users\Hiếu Học\Documents\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_Sach_Details.resources
 C:\Users\Hiếu Học\Documents\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_MuonTra.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_QLND.resources
+E:\GitHub\Quan_Ly_TV\QLTV\QLTV\QLTV\obj\Debug\QLTV.Frm_TTMuonTra.resources

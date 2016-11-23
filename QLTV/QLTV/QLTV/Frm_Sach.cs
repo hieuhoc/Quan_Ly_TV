@@ -63,6 +63,7 @@ namespace QLTV
             dlrXoa = MessageBox.Show("Bạn chắc chắn muốn xóa?", "Xóa Tài Liệu", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (dlrXoa == DialogResult.OK)
             {
+                dt = kn.Get(@"delete  from ChitietPhieuMuon where matl='" + DTGV.CurrentRow.Cells[0].Value.ToString() + "'");
                 dt = kn.Get(@"delete  from Tailieu where matl='" + DTGV.CurrentRow.Cells[0].Value.ToString() + "'");
                 load();
             }
