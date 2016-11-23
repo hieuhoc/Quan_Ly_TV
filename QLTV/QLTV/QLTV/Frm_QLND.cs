@@ -100,5 +100,21 @@ namespace QLTV
         {
             this.Close();
         }
+
+        private void btn_TimKiem_Click(object sender, EventArgs e)
+        {
+            if (rdb_TaiKhoan.Checked == true)
+            {
+                dgv.DataSource = con.Get("select * from TaiKhoan where ID='" + txt_TimKiem.Text + "'");
+            }
+            else if (rdb_MatKhau.Checked == true)
+            {
+                dgv.DataSource = con.Get("select * from TaiKhoan where MatKhau='" + txt_TimKiem.Text + "'");
+            }
+            else if (rdb_Quyen.Checked == true)
+            {
+                dgv.DataSource = con.Get("select * from TaiKhoan where PhanQuyen='" + txt_TimKiem.Text + "'");
+            }
+        }
     }
 }
